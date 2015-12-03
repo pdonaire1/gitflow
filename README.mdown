@@ -133,6 +133,16 @@ The ``-d`` flag will accept all defaults.
   
   For support branches, the `<base>` arg must be a commit on `master`.
 
+### git flow feature track check a remote repositore
+To track an existing feature branch on a remote, use feature track:
+
+	git flow feature track xxxxxx-1003b
+Alternatively just do it "the normal way":
+
+	git fetch origin
+	git branch -a # list all branches
+	git checkout feature/xxxxxx-1003b
+I.e. update the remote origin, and then checkout the branch corresponding to your colleague's branch.
 
 Showing your appreciation
 =========================
